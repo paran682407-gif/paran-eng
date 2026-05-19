@@ -2,11 +2,75 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>파란에어컨 - 리뉴얼 사이트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파란ENG - 쾌적한 공간을 만들어드립니다</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="text-align: center; padding: 100px 20px; font-family: sans-serif; background-color: #f4f6f9;">
-    <h1 style="color: #0056b3; font-size: 2.5rem;">🎉 파란에어컨 새 사이트 빌드 성공!</h1>
-    <p style="font-size: 1.2rem; color: #444;">희경 님의 피그마 디자인을 코드로 입히는 중입니다.</p>
-    <p style="color: #888;">이제 이 아래로 멋진 디자인이 채워질 예정이에요!</p>
+<body class="bg-[#07111e] text-white font-sans antialiased">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#07111e]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <a href="#" class="flex items-center">
+                <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-8 onerror-img">
+                <span class="text-xl font-bold ml-2 tracking-wider">파란ENG</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-300">
+                <a href="#" class="hover:text-cyan-400 transition">회사소개</a>
+                <a href="#" class="hover:text-cyan-400 transition">사업분야</a>
+                <a href="#" class="hover:text-cyan-400 transition">시공사례</a>
+                <a href="#" class="hover:text-cyan-400 transition">견적문의</a>
+                <a href="#" class="hover:text-cyan-400 transition">고객센터</a>
+            </nav>
+
+            <div class="flex items-center">
+                <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-neutral-900 text-xs font-bold px-4 py-2.5 rounded-md transition tracking-tight">
+                    무료 견적 받기 →
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center bg-[url('images/main-bg.jpg')] bg-cover bg-center pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-slate-900/70 to-[#07111e]"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+            
+            <span class="inline-block bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 text-xs font-bold px-3 py-1 rounded-full mb-6 tracking-wider">
+                AIR CONDITIONING SYSTEM
+            </span>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight md:leading-none mb-6">
+                쾌적한 공간을 <br class="md:hidden">
+                <span class="text-cyan-400">파란ENG</span>가 <br>
+                만들어드립니다
+            </h1>
+
+            <p class="text-gray-400 text-base md:text-lg font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+                파란ENG는 15년 이상 경력의 베테랑 기술진이 정직하고 투명한 견적을 바탕으로 <br class="hidden md:inline">
+                가장 완벽하고 쾌적한 시스템 에어컨 시공 및 설계를 책임집니다.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#" class="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-neutral-900 font-bold px-8 py-3.5 rounded-md transition shadow-lg shadow-cyan-500/20">
+                    무료 견적 받기
+                </a>
+                <a href="#" class="w-full sm:w-auto border border-white/30 hover:border-white text-white font-medium px-8 py-3.5 rounded-md transition bg-white/5">
+                    시공 사례 보기
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 font-light tracking-widest animate-bounce">
+            SCROLL DOWN
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.onerror-img').forEach(img => {
+            img.onerror = () => img.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
