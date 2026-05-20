@@ -36,6 +36,50 @@
       </a>
     </div>
   </header>
+  <!-- Mobile Menu -->
+<div id="mobileMenu"
+     class="fixed top-0 right-0 w-[280px] h-full bg-[#00273E] z-[999] translate-x-full transition-transform duration-300 md:hidden shadow-[-10px_0_30px_rgba(0,0,0,0.25)]">
+
+  <div class="flex justify-between items-center px-6 h-24 border-b border-white/10">
+    <span class="text-white font-bold text-[18px]">
+      MENU
+    </span>
+
+    <button id="closeMenu" class="text-white text-[28px]">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <nav class="flex flex-col px-6 py-8 text-white text-[16px] font-medium">
+
+    <a href="about.html" class="py-4 border-b border-white/10">
+      회사소개
+    </a>
+
+    <a href="#" class="py-4 border-b border-white/10">
+      시공분야
+    </a>
+
+    <a href="#" class="py-4 border-b border-white/10">
+      시공사례
+    </a>
+
+    <a href="#" class="py-4 border-b border-white/10">
+      책임시공
+    </a>
+
+    <a href="#" class="py-4 border-b border-white/10">
+      고객센터
+    </a>
+
+    <a href="https://pf.kakao.com/_jPlWG"
+       target="_blank"
+       class="mt-8 bg-[#1DB8CE] text-center py-4 rounded font-bold">
+      카카오톡 문의
+    </a>
+
+  </nav>
+</div>
 
   <section class="bg-[#00273E] text-white py-16">
     <div class="max-w-[1200px] mx-auto px-6">
@@ -256,6 +300,18 @@
       </div>
     </div>
   </footer>
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const closeMenu = document.getElementById('closeMenu');
+const mobileMenu = document.getElementById('mobileMenu');
 
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('translate-x-full');
+});
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.add('translate-x-full');
+});
+</script>
 </body>
 </html>
