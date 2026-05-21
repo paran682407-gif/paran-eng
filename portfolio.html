@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>파란ENG - 시공사례</title>
+
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#07111e] text-white font-['Pretendard'] antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50">
+    <div class="hidden md:block bg-[#020a14] py-2.5 text-[11px] text-gray-400">
+      <div class="max-w-[1200px] mx-auto px-6 md:px-0 flex justify-between items-center">
+        <div>에어컨 설치 전문기업 · 가정용 · 상업용 · 산업용</div>
+        <div>1533-8212 &nbsp;&nbsp; 평일 09:00-18:00</div>
+      </div>
+    </div>
+
+    <div class="bg-[#00273E] border-b border-white/5 shadow-md">
+      <div class="max-w-[1200px] mx-auto px-6 h-24 flex items-center justify-between relative">
+        <a href="index.html">
+          <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-8 md:h-7">
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
+          <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
+          <a href="cases.html" class="text-[#1DB8CE] font-bold transition">시공사례</a>
+          <a href="#" class="hover:text-[#1DB8CE] transition">책임시공</a>
+          <a href="#" class="hover:text-[#1DB8CE] transition">고객센터</a>
+        </nav>
+
+        <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
+          무료 견적 문의
+        </a>
+
+        <button id="menuBtn" class="md:hidden text-white text-[30px] leading-none">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed top-0 right-0 w-[280px] h-full bg-[#00273E] z-[999] translate-x-full transition-transform duration-300 md:hidden shadow-[-10px_0_30px_rgba(0,0,0,0.25)]">
+    <div class="flex justify-between items-center px-6 h-24 border-b border-white/10">
+      <span class="text-white font-bold text-[18px]">MENU</span>
+      <button id="closeMenu" class="text-white text-[28px]">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <nav class="flex flex-col px-6 py-8 text-white text-[16px] font-medium">
+      <a href="about.html" class="py-4 border-b border-white/10">회사소개</a>
+      <a href="service.html" class="py-4 border-b border-white/10">시공분야</a>
+      <a href="cases.html" class="py-4 border-b border-white/10 text-[#1DB8CE]">시공사례</a>
+      <a href="#" class="py-4 border-b border-white/10">책임시공</a>
+      <a href="#" class="py-4 border-b border-white/10">고객센터</a>
+    </nav>
+  </div>
+
+  <!-- Sub Hero -->
+  <section class="bg-[#00324b] pt-[190px] md:pt-[210px] pb-20 px-6 md:px-12">
+    <div class="max-w-[1200px] mx-auto">
+      <p class="text-white/70 text-[13px] mb-5">홈 / 시공사례</p>
+      <h1 class="text-[38px] md:text-[46px] font-bold mb-4">시공사례</h1>
+      <p class="text-white text-[16px] md:text-[17px]">파란ENG가 완성한 다양한 시공 현장을 확인하세요</p>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <main class="bg-white text-neutral-900 py-28 px-6 md:px-12">
+    <div class="max-w-[860px] mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-7">
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case1.jpg" alt="강동리버스트4단지" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">강동리버스트4단지</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">아파트 LG시스템에어컨 18+5+5+5 4대</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case2.jpg" alt="진주시 센텀리버파크" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">진주시 센텀리버파크</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">아파트 삼성 시스템에어컨 18+6+5+5</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case3.jpg" alt="강남 데시앙포레" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">강남 데시앙포레</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">아파트 LG시스템에어컨 18+5+5+5 4대</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case4.jpg" alt="이문 아이파크자이 2단지" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">이문 아이파크자이 2단지</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">아파트 삼성 시스템에어컨 18+6+5+5</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case5.jpg" alt="천안 공장" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">천안 공장</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">캐리어 스탠드 냉난방 80평</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case6.jpg" alt="인천 강화도" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">인천 강화도</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">LG 4way 냉난방기 40평</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case7.jpg" alt="경기도 화성시 상업용" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">경기도 화성시 상업용</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">삼성 천장형 4way 냉난방 25평</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case8.jpg" alt="경북 구미 공장" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">경북 구미 공장</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">삼성 80평형 냉난방기 스탠드에어컨</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case9.jpg" alt="전북 김제 주택" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">전북 김제 주택</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">삼성 2in1 무풍 에어컨</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case10.jpg" alt="경기도 안성 전원주택" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">경기도 안성 전원주택</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">LG시스템에어컨 냉난방기 5대</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case11.jpg" alt="경기도 시흥 사무실" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">경기도 시흥 사무실</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">LG 스탠드 냉난방기 30평형 렌탈</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-md border border-gray-200 overflow-hidden shadow-sm">
+          <img src="case/case12.jpg" alt="경기도 시흥 카페" class="w-full h-[145px] object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-[15px] mb-2">경기도 시흥 카페</h3>
+            <p class="text-gray-700 text-[13px] leading-relaxed">삼성 냉난방 6+6+6+360원형 4대</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center mt-14">
+        <button type="button" class="bg-[#21739c] hover:bg-[#1b6387] text-white text-[16px] font-bold px-11 py-4 rounded-xl shadow-md transition">
+          더보기
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="bg-[#00324b] py-20 px-6 md:px-12">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div>
+        <h2 class="text-[30px] font-bold mb-3">여러분의 시공사례도 파란 ENG와 함께 만들어보세요</h2>
+        <p class="text-white/70 text-[15px]">전문 상담원이 최적의 솔루션을 안내해드립니다.</p>
+      </div>
+
+      <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="h-[52px] px-8 bg-[#1DB8CE] hover:brightness-95 rounded text-white text-[15px] font-bold flex items-center gap-2 transition">
+        무료 견적 문의
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#07111e] text-white pt-24 pb-10 px-6 md:px-12">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
+        <div>
+          <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-9 mb-8">
+          <p class="text-gray-400 text-[14px] leading-relaxed mb-8">
+            파란ENG는 가정용부터 산업용까지 에어컨 설치, 교체 및<br>
+            유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.
+          </p>
+
+          <div class="space-y-4 text-[14px] text-gray-300">
+            <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i>1533-8212</p>
+            <p class="flex items-center gap-3"><i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i>info@paran.com</p>
+            <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i>경기도 파주시 월롱면</p>
+            <p class="flex items-center gap-3"><i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i>평일 09:00-18:00 (토·일 공휴일 휴무)</p>
+          </div>
+        </div>
+
+        <div class="md:col-start-3 grid grid-cols-2 gap-10">
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">서비스</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li>가정용 시스템에어컨</li>
+              <li>상업용 에어컨</li>
+              <li>산업용 에어컨</li>
+              <li>유지보수 서비스</li>
+              <li>렌탈 서비스</li>
+              <li>냉장공조 설비서비스</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">회사</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li>회사소개</li>
+              <li>시공분야</li>
+              <li>시공사례</li>
+              <li>책임시공</li>
+              <li>고객센터</li>
+              <li>무료 견적 문의</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
+        <p>COPYRIGHT © PARAN ENG</p>
+        <p>사업자등록번호 421-13-366416 &nbsp;&nbsp;&nbsp; 대표자명 김태훈</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+  </script>
+</body>
+</html>
