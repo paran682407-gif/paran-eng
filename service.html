@@ -15,41 +15,44 @@
     #menuToggle:checked ~ #mobileMenu { transform: translateX(0); }
   </style>
 </head>
-<body class="bg-[#07111e] text-white font-['Pretendard'] antialiased">
+<body class="bg-white text-neutral-900 font-['Pretendard'] antialiased">
 
   <input type="checkbox" id="menuToggle">
 
-  <div class="hidden md:block bg-[#020a14] py-2.5 text-[11px] text-gray-400 fixed top-0 w-full z-[60]">
-    <div class="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
-      <div>에어컨 설치 전문기업 · 가정용 · 상업용 · 산업용</div>
-      <div>1533-8212 &nbsp;&nbsp; 평일 09:00-18:00</div>
+  <div class="fixed top-0 left-0 w-full z-50 shadow-md">
+    
+    <div class="hidden md:block bg-[#020a14] py-2.5 text-[11px] text-gray-400">
+      <div class="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
+        <div>에어컨 설치 전문기업 · 가정용 · 상업용 · 산업용</div>
+        <div>1533-8212 &nbsp;&nbsp; 평일 09:00-18:00</div>
+      </div>
     </div>
+
+    <header class="bg-[#00273E] border-b border-white/5">
+      <div class="max-w-[1200px] mx-auto px-6 h-24 flex items-center justify-between relative">
+        
+        <a href="index.html">
+          <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-8 md:h-7">
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
+          <a href="service.html" class="relative text-[#1DB8CE] font-bold transition after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">시공분야</a>
+          <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
+          <a href="index.html#result" class="hover:text-[#1DB8CE] transition">책임시공</a>
+          <a href="index.html#cta" class="hover:text-[#1DB8CE] transition">고객센터</a>
+        </nav>
+
+        <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
+          카카오톡 문의
+        </a>  
+        
+        <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none leading-none">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+    </header>
   </div>
-
-  <header class="fixed top-0 md:top-[36px] left-0 w-full z-50 bg-[#00273E] border-b border-white/5 shadow-md">
-    <div class="max-w-[1200px] mx-auto px-6 h-24 flex items-center justify-between relative">
-      
-      <a href="index.html">
-        <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-8 md:h-7">
-      </a>
-
-      <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-        <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
-        <a href="service.html" class="relative text-[#1DB8CE] font-bold transition after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">시공분야</a>
-        <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
-        <a href="index.html#result" class="hover:text-[#1DB8CE] transition">책임시공</a>
-        <a href="index.html#cta" class="hover:text-[#1DB8CE] transition">고객센터</a>
-      </nav>
-
-      <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
-        카카오톡 문의
-      </a>  
-      
-      <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none leading-none">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </div>
-  </header>
 
   <div id="mobileMenu" class="fixed top-0 right-0 w-[70%] max-w-[300px] h-full bg-[#00273E] z-[100] translate-x-full transition-transform duration-300 md:hidden flex flex-col shadow-2xl">
     <div class="flex justify-between items-center px-5 h-24 border-b border-white/10">
@@ -72,11 +75,11 @@
     </nav>
   </div>
 
-  <section class="bg-[#00273E] text-white py-16 pt-[180px] md:pt-[240px] pb-20">
+  <section class="bg-[#00273E] text-white pt-[180px] pb-20">
     <div class="max-w-[1200px] mx-auto px-6">
-      <p class="text-white/60 mb-2">홈 / 시공분야</p>
+      <p class="text-white/70 text-[13px] mb-4">홈 / 시공분야</p>
       <h1 class="text-[42px] font-bold mb-4">시공분야</h1>
-      <p class="text-white/80">가정용부터 산업용까지, 다양한 맞춤형 냉난방 솔루션을 제공합니다.</p>
+      <p class="text-white/90 text-[16px]">가정용부터 산업용까지, 다양한 맞춤형 냉난방 솔루션을 제공합니다.</p>
     </div>
   </section>
 
@@ -107,7 +110,7 @@
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
-              <span>에너지 효율을 극대화한 고효율 제품 제안</span>
+              <span>energy 효율을 극대화한 고효율 제품 제안</span>
             </li>
           </ul>
         </div>
@@ -308,5 +311,5 @@
     </div>
   </footer>
 
-  </body>
+</body>
 </html>
