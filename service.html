@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>회사소개 | 파란ENG</title>
-
+  <title>시공분야 | 파란ENG</title>
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     body { font-family: 'Pretendard', sans-serif; }
     
@@ -17,8 +15,7 @@
     #menuToggle:checked ~ #mobileMenu { transform: translateX(0); }
   </style>
 </head>
-
-<body class="bg-white text-neutral-900 antialiased">
+<body class="bg-white text-neutral-900 font-['Pretendard'] antialiased">
 
   <input type="checkbox" id="menuToggle">
 
@@ -39,21 +36,20 @@
         </a>
 
         <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-          <a href="about.html" class="relative text-[#1DB8CE] font-bold after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">회사소개</a>
-          <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
+          <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
+          <a href="service.html" class="relative text-[#1DB8CE] font-bold transition after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">시공분야</a>
           <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
           <a href="index.html#result" class="hover:text-[#1DB8CE] transition">책임시공</a>
           <a href="index.html#cta" class="hover:text-[#1DB8CE] transition">고객센터</a>
         </nav>
 
-        <a href="https://pf.kakao.com/_jPlWG" target="_blank" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
+        <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
           카카오톡 문의
-        </a>
-
-        <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none">
+        </a>  
+        
+        <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none leading-none">
           <i class="fa-solid fa-bars"></i>
         </label>
-
       </div>
     </header>
   </div>
@@ -67,13 +63,13 @@
     </div>
 
     <nav class="flex flex-col px-5 pt-4 text-white text-[16px] font-bold">
-      <a href="about.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">회사소개</a>
-      <a href="service.html" class="py-5 border-b border-white/10">시공분야</a>
+      <a href="about.html" class="py-5 border-b border-white/10">회사소개</a>
+      <a href="service.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">시공분야</a>
       <a href="portfolio.html" class="py-5 border-b border-white/10">시공사례</a>
       <a href="index.html#result" class="py-5 border-b border-white/10">책임시공</a>
       <a href="index.html#cta" class="py-5 border-b border-white/10">고객센터</a>
 
-      <a href="https://pf.kakao.com/_jPlWG" target="_blank" class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
+      <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
         <i class="fa-solid fa-comment mr-2"></i>카카오톡 문의
       </a>
     </nav>
@@ -81,160 +77,231 @@
 
   <section class="bg-[#00273E] text-white pt-[180px] pb-20">
     <div class="max-w-[1200px] mx-auto px-6">
-      <p class="text-white/70 text-[13px] mb-4">홈 / 회사소개</p>
-      <h1 class="text-[42px] font-bold mb-4">회사소개</h1>
-      <p class="text-white/90 text-[16px]">고객의 쾌적한 환경을 책임지는 파란ENG를 소개합니다.</p>
+      <p class="text-white/70 text-[13px] mb-4">홈 / 시공분야</p>
+      <h1 class="text-[42px] font-bold mb-4">시공분야</h1>
+      <p class="text-white/90 text-[16px]">가정용부터 산업용까지, 다양한 맞춤형 냉난방 솔루션을 제공합니다.</p>
     </div>
   </section>
 
-  <section class="py-24 bg-white">
-    <div class="max-w-[1200px] mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+  <section class="bg-white text-neutral-900 py-16 md:py-24">
+    <div class="max-w-[1200px] mx-auto px-6 space-y-24 md:space-y-36">
+
+      <div id="domestic" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-3 md:pr-6">
+          <div class="w-[58px] h-[58px] rounded-[16px] bg-cyan-50 flex items-center justify-center">
+            <i class="fa-solid fa-house text-[#1DB8CE] text-[26px]"></i>
+          </div>
+          <div class="w-[110px] h-[4px] bg-[#1DB8CE] rounded-full mb-[-4px]"></div>
+          <p class="text-[#1DB8CE] text-[18px] font-semibold">Domestic Service</p>
+          <h2 class="text-[28px] md:text-[34px] font-bold leading-tight text-[#00273E]">가정용 시스템에어컨</h2>
+          <p class="text-gray-600 text-[15px] md:text-[16px] leading-relaxed">
+            아파트, 단독주택, 빌라 등 주거 공간의 구조와 생활 동선을 고려해 시스템에어컨을 시공합니다.
+            실내 인테리어를 해치지 않도록 배관 위치와 실내기 배치를 세밀하게 설계하며,
+            설치 후에도 냉방 효율과 소음, 마감 상태까지 꼼꼼하게 확인합니다.
+          </p>
+          <ul class="space-y-3.5 text-gray-700 text-[15px]">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>신축 아파트 및 기거주 아파트 당일 시공 가능</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>정밀한 천장 타공 및 완벽한 도배 복원 기술</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>energy 효율을 극대화한 고효율 제품 제안</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-[493px] h-[345px] rounded-xl overflow-hidden shadow-lg border border-gray-100 flex-shrink-0 mx-auto">
+          <img src="3/service1.jpg" alt="가정용 시스템에어컨 시공" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div id="commercial" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="w-full md:w-[493px] h-[345px] rounded-xl overflow-hidden shadow-lg border border-gray-100 order-2 md:order-1 flex-shrink-0 mx-auto">
+          <img src="1/service2.jpg" alt="상업용 에어컨 시공" class="w-full h-full object-cover">
+        </div>
+        <div class="space-y-3 md:pl-6 order-1 md:order-2">
+          <div class="w-[58px] h-[58px] rounded-[16px] bg-cyan-50 flex items-center justify-center">
+            <i class="fa-solid fa-building text-[#1DB8CE] text-[26px]"></i>
+          </div>
+          <div class="w-[110px] h-[4px] bg-[#1DB8CE] rounded-full mb-[-4px]"></div>
+          <p class="text-[#1DB8CE] text-[18px] font-semibold">Commercial Service</p>
+          <h2 class="text-[28px] md:text-[34px] font-bold leading-tight text-[#00273E]">상업용 냉난방 시스템</h2>
+          <p class="text-gray-600 text-[15px] md:text-[16px] leading-relaxed">
+            사무실, 카페, 음식점, 병원, 매장 등 상업 공간의 면적과 사용 목적에 맞춰 냉난방 시스템을 제안합니다.
+            고객 동선과 직원 근무 환경, 영업시간까지 고려해 시공 일정을 조율하며,
+            공간 전체에 균일한 냉난방이 이루어질 수 있도록 설계합니다.
+          </p>
+          <ul class="space-y-3.5 text-gray-700 text-[15px]">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>사무실·매장·병원 맞춤형 시공</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>공간 규모에 맞춘 냉난방 설계</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>영업 환경을 고려한 일정 조율</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="industrial" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-3 md:pr-6">
+          <div class="w-[58px] h-[58px] rounded-[16px] bg-cyan-50 flex items-center justify-center">
+            <i class="fa-solid fa-industry text-[#1DB8CE] text-[26px]"></i>
+          </div>
+          <div class="w-[110px] h-[4px] bg-[#1DB8CE] rounded-full mb-[-4px]"></div>
+          <p class="text-[#1DB8CE] text-[18px] font-semibold">Industrial Service</p>
+          <h2 class="text-[28px] md:text-[34px] font-bold leading-tight text-[#00273E]">산업용 공조 설비</h2>
+          <p class="text-gray-600 text-[15px] md:text-[16px] leading-relaxed">
+            공장, 물류창고, 서버룸, 대형 시설 등 고용량 냉난방이 필요한 현장에 적합한 공조 설비를 시공합니다.
+            현장 규모와 장비 발열, 환기 조건을 함께 검토해 안정적인 운영이 가능하도록 설계하며,
+            배관과 전기 인프라까지 고려한 시공을 진행합니다.
+          </p>
+          <ul class="space-y-3.5 text-gray-700 text-[15px]">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>대용량 냉난방 설비 시공</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>공장·창고·대형 시설 맞춤 설계</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>배관·전기 인프라 현장 점검</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-[493px] h-[345px] rounded-xl overflow-hidden shadow-lg border border-gray-100 flex-shrink-0 mx-auto">
+          <img src="3/service3.jpg" alt="산업용 에어컨 시공" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div id="maintenance" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="w-full md:w-[493px] h-[345px] rounded-xl overflow-hidden shadow-lg border border-gray-100 order-2 md:order-1 flex-shrink-0 mx-auto">
+          <img src="3/service4.jpg" alt="유지보수 서비스" class="w-full h-full object-cover">
+        </div>
+        <div class="space-y-3 md:pl-6 order-1 md:order-2">
+          <div class="w-[58px] h-[58px] rounded-[16px] bg-cyan-50 flex items-center justify-center">
+            <i class="fa-solid fa-screwdriver-wrench text-[#1DB8CE] text-[26px]"></i>
+          </div>
+          <div class="w-[110px] h-[4px] bg-[#1DB8CE] rounded-full mb-[-4px]"></div>
+          <p class="text-[#1DB8CE] text-[18px] font-semibold">Maintenance Service</p>
+          <h2 class="text-[28px] md:text-[34px] font-bold leading-tight text-[#00273E]">유지보수 서비스</h2>
+          <p class="text-gray-600 text-[15px] md:text-[16px] leading-relaxed">
+            설치 이후에도 에어컨이 안정적으로 작동할 수 있도록 정기 점검과 유지보수 서비스를 제공합니다.
+            필터, 냉매, 배관, 실외기 상태를 꼼꼼하게 확인해 고장 가능성을 줄이고,
+            성능 저하나 누수, 소음 같은 문제를 사전에 관리합니다.
+          </p>
+          <ul class="space-y-3.5 text-gray-700 text-[15px]">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>정기 점검 및 성능 확인</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>필터·실외기·배관 상태 점검</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>냉매 압력 확인 및 긴급 수리 대응</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="rental" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-3 md:pr-6">
+          <div class="w-[54px] h-[54px] rounded-[16px] bg-cyan-50 flex items-center justify-center">
+            <i class="fa-solid fa-arrows-rotate text-[#1DB8CE] text-[34px]"></i>
+          </div>
+          <div class="w-[110px] h-[4px] bg-[#1DB8CE] rounded-full mb-[-4px]"></div>
+          <p class="text-[#1DB8CE] text-[18px] font-semibold">Rental Service</p>
+          <h2 class="text-[28px] md:text-[34px] font-bold leading-tight text-[#00273E]">렌탈 서비스</h2>
+          <p class="text-gray-600 text-[15px] md:text-[16px] leading-relaxed">
+            초기 설치 비용 부담을 줄이고 필요한 기간 동안 합리적으로 이용할 수 있는 렌탈 서비스를 제공합니다.
+            공간 규모와 사용 목적에 맞는 제품을 제안하며,
+            설치부터 사용 중 관리 상담까지 함께 안내해 부담 없는 냉난방 환경을 구성할 수 있습니다.
+          </p>
+          <ul class="space-y-3.5 text-gray-700 text-[15px]">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>초기 비용 부담 완화</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>공간과 예산에 맞춘 제품 제안</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-[#1DB8CE] mt-1"></i>
+              <span>설치 후 유지관리 상담 가능</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-[493px] h-[345px] rounded-xl overflow-hidden shadow-lg border border-gray-100 flex-shrink-0 mx-auto">
+          <img src="3/service5.jpg" alt="렌탈 서비스" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-[#00324b] py-20">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
       <div>
-        <div class="w-[60px] h-[4px] bg-[#1DB8CE] mb-5"></div>
-        <h2 class="text-[42px] font-bold leading-tight mb-8">
-          고객의 쾌적한 환경<br>
-          <span class="text-[#1DB8CE]">파란ENG가 책임집니다</span>
-        </h2>
-        <p class="text-gray-600 leading-[1.9] mb-10 max-w-[560px]">
-          파란ENG는 2000년 창립 이래 "쾌적한 환경을 통한 삶의 질 향상"이라는 사명 아래, 가정부터 산업까지 모든 규모의 에어컨 설치 및 유지보수 서비스를 제공합니다.<br><br>
-          전문 기술력과 최신 장비, 그리고 25년 이상 축적된 노하우를 바탕으로 고객이 신뢰할 수 있는 최고의 서비스를 제공합니다.
-        </p>
-
-        <div class="grid grid-cols-2 gap-4 max-w-[580px]">
-          <div class="bg-gray-50 p-5 rounded-lg">
-            <div class="text-[#1DB8CE] text-[18px] mb-3"><i class="fa-regular fa-eye"></i></div>
-            <h4 class="font-bold text-[18px] mb-2">비전</h4>
-            <p class="text-sm text-gray-500">국내 최고의 에어컨 전문 기업</p>
-          </div>
-          <div class="bg-gray-50 p-5 rounded-lg">
-            <div class="text-[#1DB8CE] text-[18px] mb-3"><i class="fa-regular fa-flag"></i></div>
-            <h4 class="font-bold text-[18px] mb-2">미션</h4>
-            <p class="text-sm text-gray-500">고객 만족을 최우선으로 하는 서비스</p>
-          </div>
-          <div class="bg-gray-50 p-5 rounded-lg">
-            <div class="text-[#1DB8CE] text-[18px] mb-3"><i class="fa-regular fa-gem"></i></div>
-            <h4 class="font-bold text-[18px] mb-2">핵심가치</h4>
-            <p class="text-sm text-gray-500">전문성, 신뢰, 책임, 혁신</p>
-          </div>
-          <div class="bg-gray-50 p-5 rounded-lg">
-            <div class="text-[#1DB8CE] text-[18px] mb-3"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-            <h4 class="font-bold text-[18px] mb-2">슬로건</h4>
-            <p class="text-sm text-gray-500">쾌적한 환경, 파란ENG의 책임</p>
-          </div>
-        </div>
+        <h2 class="text-[30px] font-bold mb-3">지금바로 무료 견적을 받아보세요</h2>
+        <p class="text-white/70 text-[15px]">전문 상담원이 최적의 솔루션을 안내해드립니다.</p>
       </div>
-
-      <div class="w-full max-w-[490px] h-[300px] rounded-lg overflow-hidden shadow-md mx-auto">
-        <img src="./2/about1.jpg" alt="회사소개 이미지" class="w-full h-full object-cover scale-[1.25]">
+      <div class="flex gap-4">
+        <a href="tel:1533-8212" class="h-[48px] px-7 border border-white/60 rounded text-white text-[15px] font-bold flex items-center gap-2"><i class="fa-solid fa-phone"></i> 1533-8212</a>
+        <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="h-[48px] px-7 bg-[#1DB8CE] hover:brightness-95 rounded text-[#FFFFFF] text-[15px] font-bold flex items-center gap-2 transition"><i class="fa-solid fa-comment"></i> 카카오톡 문의</a>
       </div>
     </div>
   </section>
 
-  <section class="bg-[#EEF3F7] py-24 px-6 md:px-10">
-    <div class="max-w-[1000px] mx-auto px-6 md:px-20">
-      <div class="text-center mb-16">
-        <div class="w-[60px] h-[4px] bg-[#1DB8CE] mx-auto mb-5"></div>
-        <h2 class="text-[36px] font-bold mb-3">회사 연혁</h2>
-        <p class="text-gray-500">25년의 역사, 끊임없는 성장</p>
-      </div>
-
-      <div class="relative w-full max-w-[560px] mx-auto overflow-hidden">
-        <div class="absolute left-[155px] top-0 bottom-0 w-[1px] bg-gray-300"></div>
-        <div class="space-y-11 text-[15px] text-[#111]">
-          
-          <div class="grid grid-cols-[120px_70px_1fr] items-start">
-            <div class="text-right pr-6 text-[#148CB7] text-[28px] font-bold">2026</div>
-            <div class="flex justify-center pt-2"><span class="w-[14px] h-[14px] rounded-full border-[3px] border-[#1DB8CE] bg-[#EEF3F7] z-10"></span></div>
-            <div class="pt-1"><p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>법인 전환</p></div>
-          </div>
-          
-          <div class="grid grid-cols-[120px_70px_1fr] items-start">
-            <div class="text-right pr-6 text-[#148CB7] text-[28px] font-bold">2025</div>
-            <div class="flex justify-center pt-2"><span class="w-[14px] h-[14px] rounded-full border-[3px] border-[#1DB8CE] bg-[#EEF3F7] z-10"></span></div>
-            <div class="pt-1 space-y-2">
-              <p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>상업공간 렌탈 솔루션 서비스 론칭</p>
-              <p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>한국브랜드 소비자평가 대상</p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-[120px_70px_1fr] items-start">
-            <div class="text-right pr-6 text-[#148CB7] text-[28px] font-bold">2024</div>
-            <div class="flex justify-center pt-2"><span class="w-[14px] h-[14px] rounded-full border-[3px] border-[#1DB8CE] bg-[#EEF3F7] z-10"></span></div>
-            <div class="pt-1 space-y-2">
-              <p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>누적 시공 10,000건 달성</p>
-              <p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>한국브랜드 소비자평가 대상</p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-[120px_70px_1fr] items-start">
-            <div class="text-right pr-6 text-[#148CB7] text-[28px] font-bold">2023</div>
-            <div class="flex justify-center pt-2"><span class="w-[14px] h-[14px] rounded-full border-[3px] border-[#1DB8CE] bg-[#EEF3F7] z-10"></span></div>
-            <div class="pt-1 space-y-2">
-              <p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>한국브랜드 소비자평가 대상</p>
-              <p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>경기 및 수도권 전역 시공 네트워크 구축</p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-[120px_70px_1fr] items-start">
-            <div class="text-right pr-6 text-[#148CB7] text-[24px] font-bold leading-tight">2010<br>~2022</div>
-            <div class="flex justify-center pt-3"><span class="w-[14px] h-[14px] rounded-full border-[3px] border-[#1DB8CE] bg-[#EEF3F7] z-10"></span></div>
-            <div class="pt-2"><p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>주거용·상업용·산업용 전문 시공 서비스 전개</p></div>
-          </div>
-
-          <div class="grid grid-cols-[120px_70px_1fr] items-start">
-            <div class="text-right pr-6 text-[#148CB7] text-[28px] font-bold">2000</div>
-            <div class="flex justify-center pt-2"><span class="w-[14px] h-[14px] rounded-full border-[3px] border-[#1DB8CE] bg-[#EEF3F7] z-10"></span></div>
-            <div class="pt-1"><p><i class="fa-regular fa-circle-check text-[#1DB8CE] mr-2"></i>파란ENG 설립 및 전문 기술 팀 구성</p></div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-[#0b192c] text-white py-24 px-6 md:px-10 text-center">
-    <div class="max-w-[1000px] mx-auto px-6 md:px-20">
-      <div class="w-[60px] h-[4px] bg-[#1DB8CE] mx-auto mb-5"></div>
-      <h2 class="text-[36px] font-bold mb-3">검증된 신뢰와 안전</h2>
-      <p class="text-white/70 text-[15px] mb-14">고객의 신뢰와 안전을 최우선으로 생각합니다</p>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <div class="h-[300px] mb-6 flex items-center justify-center overflow-hidden">
-            <img src="./2/about2.jpg" alt="브랜드 대상" class="h-full object-contain">
-          </div>
-          <p class="text-white/80 text-[14px] leading-relaxed max-w-[260px] mx-auto">품질과 서비스 면에서 고객에게 인정받은 신뢰의 증거입니다</p>
-        </div>
-        <div>
-          <div class="h-[300px] mb-6 flex items-center justify-center overflow-hidden">
-            <img src="./2/about3.jpg" alt="가입증명서" class="h-full object-contain">
-          </div>
-          <p class="text-white/80 text-[14px] leading-relaxed max-w-[260px] mx-auto">시공 중 발생할 수 있는 만일의 사고까지 책임지기 위한 안전 보장 가입으로 안심을 더합니다</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-[#07111e] text-white pt-24 pb-10 px-6 md:px-12">
-    <div class="max-w-[1200px] mx-auto">
+  <footer class="bg-[#07111e] text-white pt-24 pb-10">
+    <div class="max-w-[1200px] mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
         <div>
-          <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-9 mb-8">
-          <p class="text-gray-400 text-[14px] leading-relaxed">파란ENG는 에어컨 설치, 교체 및 유지보수 서비스를 제공하는 전문 기업입니다.</p>
+          <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-9 mb-8" />
+          <p class="text-gray-400 text-[14px] leading-relaxed mb-8">파란ENG는 가정용부터 산업용까지 에어컨 설치, 교체 및<br />유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.</p>
+          <div class="space-y-3 text-[14px] text-gray-300">
+            <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i> 1533-8212</p>
+            <p class="flex items-center gap-3"><i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i> info@paran.com</p>
+            <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i> 경기도 파주시 월롱면</p>
+            <p class="flex items-center gap-3"><i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i> 평일 09:00-18:00 (토·일 공휴일 휴무)</p>
+          </div>
         </div>
-        <div class="space-y-4 text-[14px] text-gray-300">
-          <p><i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i> 1533-8212</p>
-          <p><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i> 경기도 파주시 월롱면</p>
-        </div>
-        <div class="grid grid-cols-2 gap-10 text-gray-400 text-[14px]">
-          <ul class="space-y-4">
-            <li>가정용 시스템에어컨</li>
-            <li>상업용 에어컨</li>
-          </ul>
-          <ul class="space-y-4">
-            <li><a href="about.html" class="hover:text-[#1DB8CE]">회사소개</a></li>
-            <li><a href="service.html" class="hover:text-[#1DB8CE]">시공분야</a></li>
-          </ul>
+        <div class="md:col-start-3 grid grid-cols-2 gap-10">
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">서비스</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li>가정용 시스템에어컨</li>
+              <li>상업용 에어컨</li>
+              <li>산업용 에어컨</li>
+              <li>유지보수 서비스</li>
+              <li>렌탈 서비스</li>
+              <li>냉장공조 설비서비스</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">회사</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li><a href="about.html" class="hover:text-white">회사소개</a></li>
+              <li><a href="service.html" class="hover:text-white">시공분야</a></li>
+              <li><a href="portfolio.html" class="hover:text-white">시공사례</a></li>
+              <li><a href="index.html#result" class="hover:text-white">책임시공</a></li>
+              <li><a href="index.html#cta" class="hover:text-white">고객센터</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
