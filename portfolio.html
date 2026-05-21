@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>회사소개 | 파란ENG</title>
+  <title>시공사례 | 파란ENG</title>
 
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,15 +13,18 @@
     body {
       font-family: 'Pretendard', sans-serif;
     }
+    /* CSS로만 모바일 메뉴 토글 제어하기 */
+    #menuToggle { display: none; }
+    #menuToggle:checked ~ #mobileMenu { transform: translateX(0); }
   </style>
 </head>
 
 <body class="bg-white text-[#111] antialiased">
 
-  <!-- Header -->
+  <input type="checkbox" id="menuToggle">
+
   <header class="fixed top-0 left-0 w-full z-50">
 
-    <!-- 상단 정보바 -->
     <div class="hidden md:block bg-[#020a14] py-2.5 text-[11px] text-gray-400">
       <div class="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
         <div>에어컨 설치 전문기업 · 가정용 · 상업용 · 산업용</div>
@@ -29,21 +32,19 @@
       </div>
     </div>
 
-    <!-- 메인 헤더 -->
     <div class="bg-[#00273E] border-b border-white/5 shadow-md">
       <div class="max-w-[1200px] mx-auto px-6 h-24 flex items-center justify-between relative">
 
-        <!-- 로고 -->
         <a href="index.html">
           <img src="5/파란이엔지_로고_화이트 1.svg"
                alt="파란ENG 로고"
                class="h-8 md:h-7">
         </a>
 
-        <!-- PC 메뉴 -->
         <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-
-          <a href="about.html"
+          <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
+          <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
+          <a href="portfolio.html"
              class="relative text-[#1DB8CE] font-bold transition
              after:content-['']
              after:absolute
@@ -52,27 +53,12 @@
              after:w-full
              after:h-[2px]
              after:bg-[#1DB8CE]">
-            회사소개
-          </a>
-
-          <a href="service.html" class="hover:text-[#1DB8CE] transition">
-            시공분야
-          </a>
-
-          <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">
             시공사례
           </a>
-
-          <a href="index.html#result" class="hover:text-[#1DB8CE] transition">
-            책임시공
-          </a>
-
-          <a href="index.html#cta" class="hover:text-[#1DB8CE] transition">
-            고객센터
-          </a>
+          <a href="index.html#result" class="hover:text-[#1DB8CE] transition">책임시공</a>
+          <a href="index.html#cta" class="hover:text-[#1DB8CE] transition">고객센터</a>
         </nav>
 
-        <!-- 카카오 버튼 -->
         <a href="https://pf.kakao.com/_jPlWG"
            target="_blank"
            rel="noopener noreferrer"
@@ -80,85 +66,53 @@
           카카오톡 문의
         </a>
 
-        <!-- 햄버거 -->
-        <button id="menuBtn" class="md:hidden text-white text-[30px] leading-none">
+        <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none leading-none">
           <i class="fa-solid fa-bars"></i>
-        </button>
+        </label>
 
       </div>
     </div>
   </header>
 
-  <!-- 모바일 메뉴 -->
   <div id="mobileMenu"
-       class="fixed top-0 right-0 w-full h-full bg-[#00273E] z-[999] translate-x-full transition-transform duration-300 md:hidden">
+       class="fixed top-0 right-0 w-[70%] max-w-[300px] h-full bg-[#00273E] z-[100] translate-x-full transition-transform duration-300 md:hidden flex flex-col shadow-2xl">
 
-    <div class="flex justify-between items-center px-6 h-24 border-b border-white/10">
-
-      <img src="5/파란이엔지_로고_화이트 1.svg"
-           alt="파란ENG 로고"
-           class="h-8">
-
-      <button id="closeMenu" class="text-white text-[30px]">
+    <div class="flex justify-between items-center px-5 h-24 border-b border-white/10">
+      <span class="text-white font-bold text-[16px] tracking-wider">MENU</span>
+      <label for="menuToggle" class="text-white text-[30px] cursor-pointer select-none p-2">
         <i class="fa-solid fa-xmark"></i>
-      </button>
+      </label>
     </div>
 
-    <nav class="flex flex-col px-6 pt-8 text-white text-[17px] font-bold">
-
-      <a href="about.html"
-         class="py-5 border-b border-white/10 text-[#1DB8CE]">
-        회사소개
-      </a>
-
-      <a href="service.html"
-         class="py-5 border-b border-white/10">
-        시공분야
-      </a>
-
-      <a href="portfolio.html"
-         class="py-5 border-b border-white/10">
-        시공사례
-      </a>
-
-      <a href="index.html#result"
-         class="py-5 border-b border-white/10">
-        책임시공
-      </a>
-
-      <a href="index.html#cta"
-         class="py-5 border-b border-white/10">
-        고객센터
-      </a>
+    <nav class="flex flex-col px-5 pt-4 text-white text-[16px] font-bold">
+      <a href="about.html" class="py-5 border-b border-white/10">회사소개</a>
+      <a href="service.html" class="py-5 border-b border-white/10">시공분야</a>
+      <a href="portfolio.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">시공사례</a>
+      <a href="index.html#result" class="py-5 border-b border-white/10">책임시공</a>
+      <a href="index.html#cta" class="py-5 border-b border-white/10">고객센터</a>
 
       <a href="https://pf.kakao.com/_jPlWG"
          target="_blank"
          rel="noopener noreferrer"
-         class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white">
-        카카오톡 문의
+         class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
+        <i class="fa-solid fa-comment mr-2"></i>카카오톡 문의
       </a>
-
     </nav>
   </div>
+
   <section class="bg-[#00273E] text-white pt-[180px] pb-20">
-  <div class="max-w-[1200px] mx-auto px-6">
-    <p class="text-white/70 text-[13px] mb-4">홈 / 시공사례</p>
-
-    <h1 class="text-[42px] font-bold mb-4">
-      시공사례
-    </h1>
-
-    <p class="text-white/90 text-[16px]">
-      파란ENG가 완성한 다양한 시공 현장을 확인하세요
-    </p>
-  </div>
-</section>
+    <div class="max-w-[1200px] mx-auto px-6">
+      <p class="text-white/70 text-[13px] mb-4">홈 / 시공사례</p>
+      <h1 class="text-[42px] font-bold mb-4">시공사례</h1>
+      <p class="text-white/90 text-[16px]">파란ENG가 완성한 다양한 시공 현장을 확인하세요</p>
+    </div>
+  </section>
 
   <section class="py-24 bg-white">
     <div class="max-w-[1140px] mx-auto px-4 md:px-0">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10">
 
-       <a href="https://blog.naver.com/systemaircon79/224227554695" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:-translate-y-1 border border-gray-100 transition duration-300">
+        <a href="https://blog.naver.com/systemaircon79/224227554695" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:-translate-y-1 border border-gray-100 transition duration-300">
           <img src="4/portfolio1.jpg" class="w-full h-[240px] object-cover" alt="강동리버스트4단지">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">가정용</span>
@@ -167,7 +121,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224230043470" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224230043470" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio2.jpg" class="w-full h-[240px] object-cover" alt="진주시 센텀리버파크">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">가정용</span>
@@ -176,7 +130,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224242283650" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224242283650" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio3.jpg" class="w-full h-[240px] object-cover" alt="강남 데시앙포레">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">가정용</span>
@@ -185,7 +139,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224234031672" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224234031672" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio4.jpg" class="w-full h-[240px] object-cover" alt="이문 아이파크자이 2단지">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">가정용</span>
@@ -194,7 +148,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224253315671" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224253315671" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio5.jpg" class="w-full h-[240px] object-cover" alt="천안 공장">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">산업용</span>
@@ -203,7 +157,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224260178991" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224260178991" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio6.jpg" class="w-full h-[240px] object-cover" alt="인천 강화도">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">상업용</span>
@@ -212,7 +166,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224263350636" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224263350636" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio7.jpg" class="w-full h-[240px] object-cover" alt="경기도 화성시 상업용">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">상업용</span>
@@ -221,7 +175,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224262256674" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224262256674" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio8.jpg" class="w-full h-[240px] object-cover" alt="경북 구미 공장">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">산업용</span>
@@ -230,7 +184,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224281668022" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224281668022" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio9.jpg" class="w-full h-[240px] object-cover" alt="전북 김제 주택">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">가정용</span>
@@ -239,7 +193,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224276195936" class= "block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224276195936" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio10.jpg" class="w-full h-[240px] object-cover" alt="경기도 안성 전원주택">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">가정용</span>
@@ -248,7 +202,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224266516700" class= "block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224266516700" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio11.jpg" class="w-full h-[240px] object-cover" alt="경기도 시흥 사무실">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">유지보수·렌탈</span>
@@ -257,7 +211,7 @@
           </div>
         </a>
 
-        <a href="https://blog.naver.com/systemaircon79/224278649256" class= "block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
+        <a href="https://blog.naver.com/systemaircon79/224278649256" target="_blank" class="block bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition">
           <img src="4/portfolio12.jpg" class="w-full h-[240px] object-cover" alt="경기도 시흥 카페">
           <div class="p-6">
             <span class="text-[#1DB8CE] text-[13px] font-bold bg-cyan-50 px-2.5 py-1 rounded">상업용</span>
@@ -269,12 +223,14 @@
       </div>
 
       <div class="text-center mt-20">
-  <a href="https://blog.naver.com/systemaircon79"
-     target="_blank"
-     class="inline-flex items-center justify-center px-12 py-4 bg-[#1DB8CE] text-white rounded-full text-[16px] font-bold hover:bg-[#00273E] shadow-md transition duration-300">
-    더보기 +
-  </a>
-</div>
+        <a href="https://blog.naver.com/systemaircon79"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center justify-center px-12 py-4 bg-[#1DB8CE] text-white rounded-full text-[16px] font-bold hover:bg-[#00273E] shadow-md transition duration-300">
+          더보기 +
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="cta" class="bg-[#00324b] py-20 px-6">
@@ -295,66 +251,9 @@
     </div>
   </section>
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('translate-x-full'); });
-    closeMenu.addEventListener('click', () => { mobileMenu.classList.add('translate-x-full'); });
-  </script>
-</body>
-</html>
-<footer class="bg-[#07111e] text-white pt-24 pb-10">
-  <div class="max-w-[1200px] mx-auto px-6">
+  <footer class="bg-[#07111e] text-white pt-24 pb-10">
+    <div class="max-w-[1200px] mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
         <div>
           <img src="5/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-9 mb-8" />
-          <p class="text-gray-400 text-[14px] leading-relaxed mb-8">파란ENG는 가정용부터 산업용까지 에어컨 설치, 교체 및<br />유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.</p>
-          <div class="space-y-3 text-[14px] text-gray-300">
-            <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i> 1533-8212</p>
-            <p class="flex items-center gap-3"><i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i> info@paran.com</p>
-            <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i> 경기도 파주시 월롱면</p>
-            <p class="flex items-center gap-3"><i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i> 평일 09:00-18:00 (토·일 공휴일 휴무)</p>
-          </div>
-        </div>
-        <div class="md:col-start-3 grid grid-cols-2 gap-10">
-          <div>
-            <h4 class="font-bold text-[15px] mb-6">서비스</h4>
-            <ul class="space-y-4 text-gray-400 text-[14px]">
-              <li>가정용 시스템에어컨</li>
-              <li>상업용 에어컨</li>
-              <li>산업용 에어컨</li>
-              <li>유지보수 서비스</li>
-              <li>렌탈 서비스</li>
-              <li>냉장공조 설비서비스</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold text-[15px] mb-6">회사</h4>
-            <ul class="space-y-4 text-gray-400 text-[14px]">
-              <li><a href="about.html" class="hover:text-white">회사소개</a></li>
-              <li><a href="service.html" class="hover:text-white">시공분야</a></li>
-              <li><a href="portfolio.html" class="hover:text-white">시공사례</a></li>
-              <li><a href="index.html#result" class="hover:text-white">책임시공</a></li>
-              <li><a href="index.html#cta" class="hover:text-white">고객센터</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
-        <p>COPYRIGHT © PARAN ENG</p>
-        <p>사업자등록번호 421-13-366416 &nbsp;&nbsp;&nbsp; 대표자명 김태훈</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('translate-x-full'); });
-    closeMenu.addEventListener('click', () => { mobileMenu.classList.add('translate-x-full'); });
-  </script>
-</body>
-</html>
+          <p class="text-gray-40
