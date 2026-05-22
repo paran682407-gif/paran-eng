@@ -276,6 +276,12 @@
       window.open(kakaoUrl, '_blank');
     });
   </script>
-
+<script>
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('menuToggle').checked = false;
+    });
+  });
+</script>
 </body>
 </html>
