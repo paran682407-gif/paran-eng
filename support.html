@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>고객센터 | 파란ENG</title>
+
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    body { font-family: 'Pretendard', sans-serif; }
+    
+    /* CSS로만 모바일 메뉴 토글 제어하기 */
+    #menuToggle { display: none; }
+    #menuToggle:checked ~ #mobileMenu { transform: translateX(0); }
+  </style>
+</head>
+
+<body class="bg-white text-neutral-900 antialiased">
+
+  <input type="checkbox" id="menuToggle">
+
+  <div class="fixed top-0 left-0 w-full z-50 shadow-md">
+    
+    <div class="hidden md:block bg-[#020a14] py-2.5 text-[11px] text-gray-400">
+      <div class="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
+        <div>에어컨 설치 전문기업 · 가정용 · 상업용 · 산업용</div>
+        <div>1533-8212 &nbsp;&nbsp; 평일 09:00-18:00</div>
+      </div>
+    </div>
+
+    <div class="bg-[#00273E] border-b border-white/5 shadow-md">
+      <div class="max-w-[1200px] mx-auto px-6 h-24 flex items-center justify-between relative">
+        <a href="index.html">
+          <img src="trust/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-8 md:h-7">
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
+          <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
+          <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
+          <a href="trust.html" class="hover:text-[#1DB8CE] transition">책임시공</a>
+          <a href="contact.html" class="relative text-[#1DB8CE] font-bold after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">고객센터</a>
+        </nav>
+
+        <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
+          카카오톡 문의
+        </a>  
+
+        <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none leading-none">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="fixed top-0 right-0 w-[70%] max-w-[300px] h-full bg-[#00273E] z-[100] translate-x-full transition-transform duration-300 md:hidden flex flex-col shadow-2xl">
+    <div class="flex justify-between items-center px-5 h-24 border-b border-white/10">
+      <span class="text-white font-bold text-[16px] tracking-wider">MENU</span>
+      <label for="menuToggle" class="text-white text-[30px] cursor-pointer select-none p-2">
+        <i class="fa-solid fa-xmark"></i>
+      </label>
+    </div>
+
+    <nav class="flex flex-col px-5 pt-4 text-white text-[16px] font-bold">
+      <a href="about.html" class="py-5 border-b border-white/10">회사소개</a>
+      <a href="service.html" class="py-5 border-b border-white/10">시공분야</a>
+      <a href="portfolio.html" class="py-5 border-b border-white/10">시공사례</a>
+      <a href="trust.html" class="py-5 border-b border-white/10">책임시공</a>
+      <a href="contact.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">고객센터</a>
+
+      <a href="https://pf.kakao.com/_jPlWG" target="_blank" class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
+        <i class="fa-solid fa-comment mr-2"></i>카카오톡 문의
+      </a>
+    </nav>
+  </div>
+
+  <section class="bg-[#00273E] text-white pt-[180px] pb-20">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <p class="text-white/70 text-[13px] mb-4">홈 / 고객센터</p>
+      <h1 class="text-[42px] font-bold mb-4">고객센터</h1>
+      <p class="text-white/90 text-[16px]">궁금한 점이나 견적 문의는 언제든지 연락주세요</p>
+    </div>
+  </section>
+
+  <main class="py-24 bg-white text-neutral-900">
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      
+      <div class="lg:col-span-5 space-y-8">
+        <h2 class="text-[26px] font-bold text-[#00273E] border-b-2 border-[#1DB8CE] pb-3 inline-block">연락처 정보</h2>
+        
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-[#1DB8CE] text-[18px] flex-shrink-0 mt-1">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-400 font-bold tracking-wide uppercase">대표 전화</p>
+              <p class="text-[18px] font-bold text-[#00273E] mt-0.5">1533-8212</p>
+              <p class="text-sm text-gray-500">평일 09:00 ~ 18:00</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-[#1DB8CE] text-[18px] flex-shrink-0 mt-1">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-400 font-bold tracking-wide uppercase">긴급 출동</p>
+              <p class="text-[18px] font-bold text-[#1DB8CE] mt-0.5">1533-8212</p>
+              <p class="text-sm text-gray-500">24시간 365일</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-[#1DB8CE] text-[16px] flex-shrink-0 mt-1">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-400 font-bold tracking-wide uppercase">이메일</p>
+              <p class="text-[16px] font-bold text-[#00273E] mt-0.5">info@paranaircon.co.kr</p>
+              <p class="text-sm text-gray-500">24시간 접수</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-[#1DB8CE] text-[18px] flex-shrink-0 mt-1">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-400 font-bold tracking-wide uppercase">주소</p>
+              <p class="text-[15px] font-bold text-[#00273E] mt-0.5">경기도 파주시 월롱면 용상골길 44-40</p>
+              <p class="text-sm text-gray-500">B동, 파란이엔지</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-[#1DB8CE] text-[18px] flex-shrink-0 mt-1">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-400 font-bold tracking-wide uppercase">운영 시간</p>
+              <p class="text-[15px] font-bold text-[#00273E] mt-0.5">평일 09:00 ~ 18:00</p>
+              <p class="text-sm text-gray-500">토 · 일 공휴일 휴무</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-gray-100">
+          <p class="text-sm font-bold text-[#00273E] mb-3">서비스 지역</p>
+          <div class="flex flex-wrap gap-2 max-w-[360px]">
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">서울</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">경기</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">부산</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">대구</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">대전</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">광주</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">울산</span>
+            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200/60 rounded-full text-xs font-medium text-gray-600">세종</span>
+            <span class="px-3 py-1.5 bg-[#1DB8CE]/10 border border-[#1DB8CE]/30 rounded-full text-xs font-bold text-[#1DB8CE]">전국</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 bg-white rounded-2xl border border-gray-100 shadow-sm p-8 md:p-10">
+        <h2 class="text-[26px] font-bold text-[#00273E] border-b-2 border-[#1DB8CE] pb-3 inline-block mb-8">온라인 문의</h2>
+        
+        <form action="#" method="POST" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-bold text-gray-700 mb-2">이름</label>
+              <input type="text" placeholder="홍길동" required class="w-full h-12 px-4 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#1DB8CE] focus:ring-1 focus:ring-[#1DB8CE] transition">
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-gray-700 mb-2">연락처</label>
+              <input type="tel" placeholder="010-0000-0000" required class="w-full h-12 px-4 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#1DB8CE] focus:ring-1 focus:ring-[#1DB8CE] transition">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">이메일</label>
+            <input type="email" placeholder="example@naver.com" class="w-full h-12 px-4 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#1DB8CE] focus:ring-1 focus:ring-[#1DB8CE] transition">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">서비스 유형</label>
+            <div class="relative">
+              <select required class="w-full h-12 px-4 border border-gray-200 rounded-lg text-sm bg-white appearance-none focus:outline-none focus:border-[#1DB8CE] cursor-pointer pr-10">
+                <option value="" disabled selected hidden>서비스 유형을 선택하세요</option>
+                <option value="domestic">가정용 시스템에어컨</option>
+                <option value="commercial">상업용 냉난방 시스템</option>
+                <option value="industrial">산업용 공조 설비</option>
+                <option value="maintenance">정기 유지보수 점검</option>
+                <option value="rental">에어컨 렌탈 서비스</option>
+              </select>
+              <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-400 text-xs">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">문의 내용</label>
+            <textarea rows="6" placeholder="문의하실 내용을 자세히 입력해 주세요. (지역, 설치 장소, 면적, 요청사항 등)" required class="w-full p-4 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#1DB8CE] focus:ring-1 focus:ring-[#1DB8CE] resize-none transition"></textarea>
+          </div>
+
+          <p class="text-xs text-gray-400 flex items-start gap-1.5 leading-relaxed">
+            <i class="fa-solid fa-triangle-exclamation mt-0.5 text-orange-400 flex-shrink-0"></i>
+            <span>입력하신 개인정보는 문의 처리 목적으로만 사용되며, 처리 완료 후 즉시 파기됩니다.</span>
+          </p>
+
+          <button type="submit" class="w-full h-14 bg-[#00273E] hover:bg-[#1DB8CE] text-white text-[15px] font-bold rounded-lg shadow-sm transition">
+            문의 접수하기
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-[#07111e] text-white pt-24 pb-10 px-6 md:px-12">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
+        <div>
+          <img src="trust/파란이엔지_로고_화이트 1.svg" alt="파란ENG 로고" class="h-9 mb-8">
+          <p class="text-gray-400 text-[14px] leading-relaxed mb-8">
+            파란ENG는 가정용부터 산업용까지 에어컨 설치, 교체 및<br>유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.
+          </p>
+          <div class="space-y-4 text-[14px] text-gray-300">
+            <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i>1533-8212</p>
+            <p class="flex items-center gap-3"><i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i>info@paran.com</p>
+            <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i>경기도 파주시 월롱면</p>
+            <p class="flex items-center gap-3"><i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i>평일 09:00-18:00 (토·일 공휴일 휴무)</p>
+          </div>
+        </div>
+
+        <div class="md:col-start-3 grid grid-cols-2 gap-10">
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">서비스</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li>가정용 시스템에어컨</li>
+              <li>상업용 에어컨</li>
+              <li>산업용 에어컨</li>
+              <li>유지보수 서비스</li>
+              <li>렌탈 서비스</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">회사</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li><a href="about.html" class="hover:text-[#1DB8CE]">회사소개</a></li>
+              <li><a href="service.html" class="hover:text-[#1DB8CE]">시공분야</a></li>
+              <li><a href="portfolio.html" class="hover:text-[#1DB8CE]">시공사례</a></li>
+              <li><a href="trust.html" class="hover:text-[#1DB8CE]">책임시공</a></li>
+              <li><a href="contact.html" class="hover:text-[#1DB8CE]">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
+        <p>COPYRIGHT © PARAN ENG</p>
+        <p>사업자등록번호 421-13-366416 &nbsp;&nbsp;&nbsp; 대표자명 김태훈</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
