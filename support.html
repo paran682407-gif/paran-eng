@@ -42,7 +42,7 @@
           <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
           <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
           <a href="trust.html" class="hover:text-[#1DB8CE] transition">책임시공</a>
-          <a href="contact.html" class="relative text-[#1DB8CE] font-bold after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">고객센터</a>
+          <a href="support.html" class="relative text-[#1DB8CE] font-bold after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">고객센터</a>
         </nav>
 
         <a href="https://pf.kakao.com/_jPlWG" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
@@ -69,7 +69,7 @@
       <a href="service.html" class="py-5 border-b border-white/10">시공분야</a>
       <a href="portfolio.html" class="py-5 border-b border-white/10">시공사례</a>
       <a href="trust.html" class="py-5 border-b border-white/10">책임시공</a>
-      <a href="contact.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">고객센터</a>
+      <a href="support.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">고객센터</a>
 
       <a href="https://pf.kakao.com/_jPlWG" target="_blank" class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
         <i class="fa-solid fa-comment mr-2"></i>카카오톡 문의
@@ -251,7 +251,7 @@
               <li><a href="service.html" class="hover:text-[#1DB8CE]">시공분야</a></li>
               <li><a href="portfolio.html" class="hover:text-[#1DB8CE]">시공사례</a></li>
               <li><a href="trust.html" class="hover:text-[#1DB8CE]">책임시공</a></li>
-              <li><a href="contact.html" class="hover:text-[#1DB8CE]">고객센터</a></li>
+              <li><a href="support.html" class="hover:text-[#1DB8CE]">고객센터</a></li>
             </ul>
           </div>
         </div>
@@ -273,10 +273,8 @@
       const type = document.getElementById('formType').value;
       const message = document.getElementById('formMessage').value;
 
-      // 톡창에 자동 입력될 문자열 템플릿
       const text = `[홈페이지 문의 접수]\n\n• 고객명: ${name}\n• 연락처: ${tel}\n• 이메일: ${email}\n• 서비스 유형: ${type}\n\n• 문의내용:\n${message}`;
 
-      // 카카오링크 URL 인코딩 후 브라우저 새 창 열기
       const kakaoUrl = `https://pf.kakao.com/_jPlWG/chat?extra=${encodeURIComponent(text)}`;
       window.open(kakaoUrl, '_blank');
     });
