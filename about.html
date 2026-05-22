@@ -43,7 +43,7 @@
           <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
           <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
           <a href="trust.html" class="hover:text-[#1DB8CE] transition">책임시공</a>
-          <a href="index.html#cta" class="hover:text-[#1DB8CE] transition">고객센터</a>
+          <a href="support.html" class="hover:text-[#1DB8CE] transition">고객센터</a>
         </nav>
 
         <a href="https://pf.kakao.com/_jPlWG" target="_blank" class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
@@ -71,7 +71,7 @@
       <a href="service.html" class="py-5 border-b border-white/10">시공분야</a>
       <a href="portfolio.html" class="py-5 border-b border-white/10">시공사례</a>
       <a href="trust.html" class="py-5 border-b border-white/10">책임시공</a>
-      <a href="index.html#cta" class="py-5 border-b border-white/10">고객센터</a>
+      <a href="support.html" class="py-5 border-b border-white/10">고객센터</a>
 
       <a href="https://pf.kakao.com/_jPlWG" target="_blank" class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
         <i class="fa-solid fa-comment mr-2"></i>카카오톡 문의
@@ -109,7 +109,7 @@
           <div class="bg-gray-50 p-5 rounded-lg">
             <div class="text-[#1DB8CE] text-[18px] mb-3"><i class="fa-regular fa-flag"></i></div>
             <h4 class="font-bold text-[18px] mb-2">미션</h4>
-            <p class="text-sm text-gray-500">고객 만족을 최우선으로 하는 서비스</p>
+            <p class="text-sm text-gray-500">고객 만족을 최우선으로 하는 service</p>
           </div>
           <div class="bg-gray-50 p-5 rounded-lg">
             <div class="text-[#1DB8CE] text-[18px] mb-3"><i class="fa-regular fa-gem"></i></div>
@@ -224,7 +224,7 @@
           <div class="space-y-3 text-[14px] text-gray-300">
             <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i> 1533-8212</p>
             <p class="flex items-center gap-3"><i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i> info@paran.com</p>
-            <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i> 경기도 파주시 월롱면</p>
+            <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-[#1DB8CE] w-4"></i> 경기도 파주시 월롱면 용상골길 44-40</p>
             <p class="flex items-center gap-3"><i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i> 평일 09:00-18:00 (토·일 공휴일 휴무)</p>
           </div>
         </div>
@@ -237,7 +237,6 @@
               <li>산업용 에어컨</li>
               <li>유지보수 서비스</li>
               <li>렌탈 서비스</li>
-              <li>냉장공조 설비서비스</li>
             </ul>
           </div>
           <div>
@@ -247,7 +246,7 @@
               <li><a href="service.html" class="hover:text-white">시공분야</a></li>
               <li><a href="portfolio.html" class="hover:text-white">시공사례</a></li>
               <li><a href="trust.html" class="hover:text-white">책임시공</a></li>
-              <li><a href="index.html#cta" class="hover:text-white">고객센터</a></li>
+              <li><a href="support.html" class="hover:text-white">고객센터</a></li>
             </ul>
           </div>
         </div>
@@ -259,5 +258,12 @@
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menuToggle').checked = false;
+      });
+    });
+  </script>
 </body>
 </html>
