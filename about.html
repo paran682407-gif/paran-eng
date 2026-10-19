@@ -292,117 +292,139 @@
     </div>
   </section>
 
-  <!-- 푸터 -->
-  <footer class="bg-[#07111e] text-white pt-24 pb-10">
-    <div class="max-w-[1200px] mx-auto px-6">
+ 
+<!-- 푸터 -->
+<footer class="bg-[#07111e] text-white pt-24 pb-10">
+  <div class="max-w-[1200px] mx-auto px-6">
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-24">
 
-        <!-- 왼쪽 회사 정보 -->
-        <div class="md:col-span-2">
+      <!-- 왼쪽 회사 정보 -->
+      <div class="md:col-span-2 min-w-0">
 
-          <img src="trust/파란공조시스템_화이트_로고.png"
-               alt="파란공조시스템 로고"
-               class="h-9 w-auto object-contain mb-8" />
+        <!-- 새 로고 -->
+        <a href="index.html" class="inline-block mb-8">
+          <img
+            src="trust/파란공조시스템_화이트_로고.png"
+            alt="파란공조시스템 로고"
+            class="h-9 md:h-10 w-auto max-w-full object-contain"
+          >
+        </a>
 
-          <p class="text-gray-400 text-[14px] leading-relaxed mb-8">
-            파란공조시스템은 가정용부터 산업용까지 에어컨 설치,
-            교체 및 유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.
+        <!-- 회사 설명 : 기존처럼 두 줄 -->
+        <p class="text-gray-400 text-[14px] leading-[1.9] mb-8 max-w-[460px]">
+          파란공조시스템은 가정용부터 산업용까지 에어컨 설치, 교체 및<br class="hidden md:block">
+          유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.
+        </p>
+
+        <!-- 연락처 -->
+        <div class="space-y-3 text-[14px] text-gray-300 mb-10">
+
+          <p class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i>
+            <a href="tel:15552860" class="hover:text-white">
+              1555-2860
+            </a>
           </p>
 
-          <div class="space-y-3 text-[14px] text-gray-300 mb-8">
+          <p class="flex items-center gap-3">
+            <i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i>
+            info@paran.com
+          </p>
 
-            <p class="flex items-center gap-3">
-              <i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i>
-              <a href="tel:15552860" class="hover:text-white">1555-2860</a>
-            </p>
+          <p class="flex items-center gap-3">
+            <i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i>
+            평일 09:00-18:00 (토·일 공휴일 휴무)
+          </p>
 
-            <p class="flex items-center gap-3">
-              <i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i>
-              info@paran.com
-            </p>
-
-            <p class="flex items-center gap-3">
-              <i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i>
-              평일 09:00-18:00 (토·일 공휴일 휴무)
-            </p>
-
-          </div>
-
-          <!-- 사업장 주소 -->
-          <div class="space-y-4 text-[13px] text-gray-400 leading-relaxed">
-
-            <div class="flex gap-3">
-              <span class="text-[#1DB8CE] font-semibold shrink-0">본사</span>
-              <p>
-                <strong class="text-gray-200">파란공조시스템</strong><br>
-                경기 파주시 초롱꽃로 109 팜스타워 406호
-              </p>
-            </div>
-
-            <div class="flex gap-3">
-              <span class="text-[#1DB8CE] font-semibold shrink-0">지사</span>
-              <p>
-                <strong class="text-gray-200">파란ENG</strong><br>
-                인천광역시 서구 도요지로 189번길 24, 403호
-              </p>
-            </div>
-
-            <div class="flex gap-3">
-              <span class="text-[#1DB8CE] font-semibold shrink-0">지사</span>
-              <p>
-                <strong class="text-gray-200">파란냉난방</strong><br>
-                서울 강서구 가로공원로 179 지하층2
-              </p>
-            </div>
-
-            <div class="flex gap-3">
-              <span class="text-[#1DB8CE] font-semibold shrink-0">지사</span>
-              <p>
-                <strong class="text-gray-200">파란에어컨</strong><br>
-                부산광역시 강서구 에코대로243 102동 503호
-              </p>
-            </div>
-
-          </div>
         </div>
 
-        <!-- 오른쪽 메뉴 -->
-        <div class="grid grid-cols-2 gap-10">
+        <!-- 본사 및 지사 -->
+        <div class="space-y-4 text-[13px] text-gray-400 leading-relaxed">
 
-          <div>
-            <h4 class="font-bold text-[15px] mb-6">서비스</h4>
-            <ul class="space-y-4 text-gray-400 text-[14px]">
-              <li>가정용 시스템에어컨</li>
-              <li>상업용 에어컨</li>
-              <li>산업용 에어컨</li>
-              <li>유지보수 서비스</li>
-              <li>렌탈 서비스</li>
-            </ul>
+          <div class="flex gap-4">
+            <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">
+              본사
+            </span>
+            <p>
+              <strong class="text-gray-200">파란공조시스템</strong><br>
+              경기 파주시 초롱꽃로 109 팜스타워 406호
+            </p>
           </div>
 
-          <div>
-            <h4 class="font-bold text-[15px] mb-6">회사</h4>
-            <ul class="space-y-4 text-gray-400 text-[14px]">
-              <li><a href="about.html" class="hover:text-white">회사소개</a></li>
-              <li><a href="service.html" class="hover:text-white">시공분야</a></li>
-              <li><a href="portfolio.html" class="hover:text-white">시공사례</a></li>
-              <li><a href="trust.html" class="hover:text-white">책임시공</a></li>
-              <li><a href="support.html" class="hover:text-white">고객센터</a></li>
-            </ul>
+          <div class="flex gap-4">
+            <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">
+              인천지사
+            </span>
+            <p>
+              <strong class="text-gray-200">파란ENG</strong><br>
+              인천광역시 서구 도요지로 189번길 24, 403호
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">
+              서울지사
+            </span>
+            <p>
+              <strong class="text-gray-200">파란냉난방</strong><br>
+              서울 강서구 가로공원로 179 지하층2
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">
+              부산지사
+            </span>
+            <p>
+              <strong class="text-gray-200">파란에어컨</strong><br>
+              부산광역시 강서구 에코대로243 102동 503호
+            </p>
           </div>
 
         </div>
       </div>
 
-      <!-- 하단 사업자 정보 -->
-      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
-        <p>COPYRIGHT © PARAN AIR SYSTEM</p>
-        <p>사업자등록번호 266-05-03728 &nbsp;&nbsp;&nbsp; 대표자명 김태훈</p>
-      </div>
+      <!-- 오른쪽 메뉴 -->
+      <div class="grid grid-cols-2 gap-8 md:gap-10 content-start">
 
+        <div>
+          <h4 class="font-bold text-[15px] mb-6">서비스</h4>
+          <ul class="space-y-4 text-gray-400 text-[14px]">
+            <li>가정용 시스템에어컨</li>
+            <li>상업용 에어컨</li>
+            <li>산업용 에어컨</li>
+            <li>유지보수 서비스</li>
+            <li>렌탈 서비스</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-[15px] mb-6">회사</h4>
+          <ul class="space-y-4 text-gray-400 text-[14px]">
+            <li><a href="about.html" class="hover:text-white">회사소개</a></li>
+            <li><a href="service.html" class="hover:text-white">시공분야</a></li>
+            <li><a href="portfolio.html" class="hover:text-white">시공사례</a></li>
+            <li><a href="trust.html" class="hover:text-white">책임시공</a></li>
+            <li><a href="support.html" class="hover:text-white">고객센터</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-  </footer>
+
+    <!-- 사업자 정보 -->
+    <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
+      <p>COPYRIGHT © PARAN AIR SYSTEM</p>
+      <p>
+        사업자등록번호 266-05-03728
+        &nbsp;&nbsp;&nbsp;
+        대표자명 김태훈
+      </p>
+    </div>
+
+  </div>
+</footer>
 
   <!-- 모바일 메뉴 스크립트 -->
   <script>
