@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 | 파란공조시스템</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { font-family: 'Pretendard', sans-serif; }
+
+    #menuToggle { display: none; }
+
+    #menuToggle:checked ~ #mobileMenu {
+      transform: translateX(0);
+    }
+
+    .policy-content h2 {
+      color: #00273E;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    .policy-content p,
+    .policy-content li {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.95;
+    }
+
+    .policy-content ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-top: 10px;
+    }
+
+    .policy-content li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-neutral-900 antialiased">
+
+  <input type="checkbox" id="menuToggle">
+
+  <!-- 공통 헤더 -->
+  <div class="fixed top-0 left-0 w-full z-50 shadow-md">
+
+    <div class="hidden md:block bg-[#020a14] py-2.5 text-[11px] text-gray-400">
+      <div class="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
+        <div>에어컨 설치 전문기업 · 가정용 · 상업용 · 산업용</div>
+        <div>1555-2860 &nbsp;&nbsp; 평일 09:00-18:00</div>
+      </div>
+    </div>
+
+    <header class="bg-[#00273E] border-b border-white/5">
+      <div class="max-w-[1200px] mx-auto px-6 h-24 flex items-center justify-between relative">
+
+        <a href="index.html">
+          <img src="/trust/paranlogo.png"
+               alt="파란공조시스템 로고"
+               class="h-8 md:h-7 w-auto object-contain">
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-12 text-[15px] font-medium text-white/90 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+
+          <a href="about.html" class="hover:text-[#1DB8CE] transition">회사소개</a>
+          <a href="service.html" class="hover:text-[#1DB8CE] transition">시공분야</a>
+          <a href="portfolio.html" class="hover:text-[#1DB8CE] transition">시공사례</a>
+          <a href="trust.html" class="hover:text-[#1DB8CE] transition">책임시공</a>
+          <a href="support.html" class="relative text-[#1DB8CE] font-bold after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full after:h-[2px] after:bg-[#1DB8CE]">고객센터</a>
+
+        </nav>
+
+        <a href="https://pf.kakao.com/_jPlWG"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition">
+          카카오톡 문의
+        </a>
+
+        <label for="menuToggle" class="md:hidden text-white text-[30px] cursor-pointer select-none leading-none">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+      </div>
+    </header>
+  </div>
+
+  <!-- 모바일 메뉴 -->
+  <div id="mobileMenu" class="fixed top-0 right-0 w-[70%] max-w-[300px] h-full bg-[#00273E] z-[100] translate-x-full transition-transform duration-300 md:hidden flex flex-col shadow-2xl">
+
+    <div class="flex justify-between items-center px-5 h-24 border-b border-white/10">
+      <span class="text-white font-bold text-[16px] tracking-wider">MENU</span>
+
+      <label for="menuToggle" class="text-white text-[30px] cursor-pointer p-2">
+        <i class="fa-solid fa-xmark"></i>
+      </label>
+    </div>
+
+    <nav class="flex flex-col px-5 pt-4 text-white text-[16px] font-bold">
+      <a href="about.html" class="py-5 border-b border-white/10">회사소개</a>
+      <a href="service.html" class="py-5 border-b border-white/10">시공분야</a>
+      <a href="portfolio.html" class="py-5 border-b border-white/10">시공사례</a>
+      <a href="trust.html" class="py-5 border-b border-white/10">책임시공</a>
+      <a href="support.html" class="py-5 border-b border-white/10">고객센터</a>
+      <a href="privacy.html" class="py-5 border-b border-white/10 text-[#1DB8CE]">개인정보처리방침</a>
+
+      <a href="https://pf.kakao.com/_jPlWG"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]">
+        <i class="fa-solid fa-comment mr-2"></i>카카오톡 문의
+      </a>
+    </nav>
+  </div>
+
+  <!-- 페이지 상단 -->
+  <section class="bg-[#00273E] text-white pt-[180px] pb-20">
+    <div class="max-w-[1200px] mx-auto px-6">
+
+      <p class="text-white/70 text-[13px] mb-4">
+        홈 / 고객센터 / 개인정보처리방침
+      </p>
+
+      <h1 class="text-[42px] font-bold mb-4">
+        개인정보처리방침
+      </h1>
+
+      <p class="text-white/90 text-[16px]">
+        고객님의 개인정보를 소중하게 생각합니다.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- 개인정보처리방침 본문 -->
+  <main class="bg-white py-20 md:py-28">
+
+    <div class="max-w-[1000px] mx-auto px-6">
+
+      <div class="w-[60px] h-[4px] bg-[#1DB8CE] mb-5"></div>
+
+      <h2 class="text-[30px] font-bold text-[#00273E] mb-8">
+        개인정보처리방침
+      </h2>
+
+      <div class="policy-content">
+
+        <p>
+          파란공조시스템(이하 "회사")은 고객의 개인정보를 소중하게
+          생각하며, 개인정보 보호법 등 관련 법령을 준수하고 있습니다.
+          회사는 개인정보의 처리 목적과 처리 방법, 정보주체의 권리
+          및 보호조치에 관한 사항을 다음과 같이 안내합니다.
+        </p>
+
+        <!-- 제1조 -->
+        <h2>제1조. 개인정보의 처리 목적</h2>
+
+        <p>
+          회사는 다음의 목적을 위하여 개인정보를 처리합니다.
+          개인정보는 안내한 목적의 범위에서 처리하며,
+          목적이 변경되는 경우 관련 법령에 따라 필요한 조치를
+          이행합니다.
+        </p>
+
+        <ul>
+          <li>고객 상담 및 견적 문의 응대</li>
+          <li>에어컨 설치, 유지보수, 렌탈 서비스 관련 상담</li>
+          <li>고객 요청사항 확인 및 서비스 안내</li>
+          <li>서비스 문의와 관련된 의사소통</li>
+        </ul>
+
+        <!-- 제2조 -->
+        <h2>제2조. 처리하는 개인정보의 항목</h2>
+
+        <p>
+          고객센터 온라인 문의 및 상담 과정에서 다음과 같은
+          개인정보가 처리될 수 있습니다.
+        </p>
+
+        <ul>
+          <li>필수 항목: 이름, 연락처, 서비스 유형, 문의 내용</li>
+          <li>선택 항목: 이메일</li>
+          <li>추가 상담 시 고객이 직접 제공한 설치 장소 및 요청사항</li>
+        </ul>
+
+        <p class="mt-3">
+          문의하기 기능은 카카오톡 채팅 연결 방식으로 구성되어 있습니다.
+          카카오톡에서 실제로 전송하는 개인정보와 처리 방식은
+          해당 서비스의 운영 방식에 영향을 받을 수 있습니다.
+        </p>
+
+        <!-- 제3조 -->
+        <h2>제3조. 개인정보의 처리 및 보유기간</h2>
+
+        <p>
+          회사는 개인정보를 수집할 때 안내한 보유기간 및
+          관련 법령에 따른 기간 동안 처리합니다.
+        </p>
+
+        <p class="mt-3">
+          고객 상담 및 견적 문의 정보의 구체적인 보유기간:
+          <strong class="text-[#00273E]">
+            [실제 운영 기준 확인 후 입력]
+          </strong>
+        </p>
+
+        <p class="mt-3">
+          법령에 따라 일정 기간 보존해야 하는 정보가 있는 경우에는
+          해당 법령에서 정한 기간 동안 보관할 수 있습니다.
+        </p>
+
+        <!-- 제4조 -->
+        <h2>제4조. 개인정보의 제3자 제공</h2>
+
+        <p>
+          회사는 개인정보를 처리 목적 범위에서 이용하며,
+          제3자 제공이 필요한 경우 관련 법령에 따라 필요한
+          동의 또는 법적 근거를 확인합니다.
+        </p>
+
+        <p class="mt-3">
+          제3자 제공 현황:
+          <strong class="text-[#00273E]">
+            [실제 운영 및 제공 현황 확인 후 입력]
+          </strong>
+        </p>
+
+        <!-- 제5조 -->
+        <h2>제5조. 개인정보 처리업무의 위탁</h2>
+
+        <p>
+          회사가 개인정보 처리업무를 외부 업체에 위탁하는 경우,
+          수탁업체 및 위탁업무의 내용 등 관련 법령에서 요구하는
+          사항을 공개합니다.
+        </p>
+
+        <p class="mt-3">
+          개인정보 처리업무 위탁 현황:
+          <strong class="text-[#00273E]">
+            [위탁 여부 및 수탁업체 확인 후 입력]
+          </strong>
+        </p>
+
+        <!-- 제6조 -->
+        <h2>제6조. 개인정보의 파기절차 및 방법</h2>
+
+        <p>
+          회사는 개인정보의 보유기간이 경과하거나 처리 목적이
+          달성되는 등 개인정보가 불필요하게 되었을 때
+          관련 법령에 따라 파기합니다.
+        </p>
+
+        <ul>
+          <li>전자적 파일: 복원이 어렵도록 적절한 기술적 방법으로 삭제</li>
+          <li>종이 문서: 분쇄 또는 소각 등 적절한 방법으로 파기</li>
+          <li>법령상 보존이 필요한 정보: 해당 기간 동안 분리 보관 등 필요한 조치 수행</li>
+        </ul>
+
+        <!-- 제7조 -->
+        <h2>제7조. 정보주체의 권리 및 행사 방법</h2>
+
+        <p>
+          정보주체는 관련 법령에 따라 개인정보에 대한
+          열람, 정정, 삭제, 처리정지 등의 권리를 행사할 수
+          있습니다. 회사는 법령에서 정한 절차와 범위에 따라
+          요청을 처리합니다.
+        </p>
+
+        <p class="mt-3">
+          개인정보 관련 요청은 아래 개인정보 보호 담당 연락처로
+          문의할 수 있습니다.
+        </p>
+
+        <!-- 제8조 -->
+        <h2>제8조. 개인정보의 안전성 확보조치</h2>
+
+        <p>
+          회사는 개인정보를 안전하게 처리하기 위하여
+          관련 법령에 따라 필요한 관리적·기술적·물리적
+          보호조치를 시행합니다.
+        </p>
+
+        <p class="mt-3">
+          구체적인 내부 보호조치는 실제 적용 중인 보안 및
+          접근관리 체계를 기준으로 운영합니다.
+        </p>
+
+        <!-- 제9조 -->
+        <h2>제9조. 개인정보 보호책임자 및 문의처</h2>
+
+        <p>
+          회사는 개인정보 보호와 관련된 문의 및 불만 처리를
+          위해 다음과 같은 연락 창구를 안내합니다.
+        </p>
+
+        <ul>
+          <li>회사명: 파란공조시스템</li>
+          <li>개인정보 보호책임자: [성명 및 직책 확인 후 입력]</li>
+          <li>담당부서: [실제 담당부서 확인 후 입력]</li>
+          <li>대표전화: 1555-2860</li>
+          <li>이메일: [개인정보 문의 수신용 이메일 확인 후 입력]</li>
+        </ul>
+
+        <!-- 제10조 -->
+        <h2>제10조. 개인정보처리방침의 변경</h2>
+
+        <p>
+          본 개인정보처리방침은 법령 또는 회사의 개인정보
+          처리 방식 변경에 따라 수정될 수 있습니다.
+          변경 사항이 있는 경우 홈페이지 등을 통해 안내합니다.
+        </p>
+
+        <p class="mt-5 font-semibold text-[#00273E]">
+          시행일자: [실제 시행일 입력]
+        </p>
+
+      </div>
+
+      <!-- 고객센터 이동 -->
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <a href="support.html"
+           class="inline-flex items-center gap-2 px-6 py-3 bg-[#00273E] text-white text-[14px] font-bold rounded hover:bg-[#1DB8CE] transition">
+          <i class="fa-solid fa-arrow-left"></i>
+          고객센터로 돌아가기
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- 공통 푸터 -->
+  <footer class="bg-[#07111e] text-white pt-24 pb-10">
+    <div class="max-w-[1200px] mx-auto px-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-24">
+
+        <div class="md:col-span-2 min-w-0">
+
+          <a href="index.html" class="inline-block mb-8">
+            <img src="/trust/paranlogo.png"
+                 alt="파란공조시스템 로고"
+                 class="h-9 md:h-10 w-auto max-w-full object-contain">
+          </a>
+
+          <p class="text-gray-400 text-[14px] leading-[1.9] mb-8 max-w-[460px]">
+            파란공조시스템은 가정용부터 산업용까지 에어컨 설치, 교체 및<br class="hidden md:block">
+            유지보수, 렌탈 서비스를 제공하는 전문 기업입니다.
+          </p>
+
+          <div class="space-y-3 text-[14px] text-gray-300 mb-10">
+
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-[#1DB8CE] w-4"></i>
+              <a href="tel:15552860" class="hover:text-white">1555-2860</a>
+            </p>
+
+            <p class="flex items-center gap-3">
+              <i class="fa-regular fa-envelope text-[#1DB8CE] w-4"></i>
+              info@paran.com
+            </p>
+
+            <p class="flex items-center gap-3">
+              <i class="fa-regular fa-clock text-[#1DB8CE] w-4"></i>
+              평일 09:00-18:00 (토·일 공휴일 휴무)
+            </p>
+
+          </div>
+
+          <!-- 본사 및 지사 -->
+          <div class="space-y-4 text-[13px] text-gray-400 leading-relaxed">
+
+            <div class="flex gap-4">
+              <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">본사</span>
+              <p>
+                <strong class="text-gray-200">파란공조시스템</strong><br>
+                경기 파주시 초롱꽃로 109 팜스타워 406호
+              </p>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">인천지사</span>
+              <p>
+                <strong class="text-gray-200">파란ENG</strong><br>
+                인천광역시 서구 도요지로 189번길 24, 403호
+              </p>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">서울지사</span>
+              <p>
+                <strong class="text-gray-200">파란냉난방</strong><br>
+                서울 강서구 가로공원로 179 지하층2
+              </p>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="text-[#1DB8CE] font-semibold shrink-0 w-[55px]">부산지사</span>
+              <p>
+                <strong class="text-gray-200">파란에어컨</strong><br>
+                부산광역시 강서구 에코대로243 102동 503호
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 md:gap-10 content-start">
+
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">서비스</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li>가정용 시스템에어컨</li>
+              <li>상업용 에어컨</li>
+              <li>산업용 에어컨</li>
+              <li>유지보수 서비스</li>
+              <li>렌탈 서비스</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[15px] mb-6">회사</h4>
+            <ul class="space-y-4 text-gray-400 text-[14px]">
+              <li><a href="about.html" class="hover:text-white">회사소개</a></li>
+              <li><a href="service.html" class="hover:text-white">시공분야</a></li>
+              <li><a href="portfolio.html" class="hover:text-white">시공사례</a></li>
+              <li><a href="trust.html" class="hover:text-white">책임시공</a></li>
+              <li><a href="support.html" class="hover:text-white">고객센터</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between gap-4 text-[12px] text-gray-500">
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="privacy.html" class="hover:text-white font-medium">
+            개인정보처리방침
+          </a>
+          <p>COPYRIGHT © PARAN AIR SYSTEM</p>
+        </div>
+
+        <p>
+          사업자등록번호 266-05-03728
+          &nbsp;&nbsp;&nbsp;
+          대표자명 김태훈
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 모바일 메뉴 닫기 -->
+  <script>
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menuToggle').checked = false;
+      });
+    });
+  </script>
+
+</body>
+</html>
