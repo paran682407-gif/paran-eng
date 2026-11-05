@@ -73,9 +73,9 @@
 
         </nav>
 
-        <!-- 카카오톡 문의 -->
+        <!-- PC 카카오톡 문의 -->
         <a
-          href="https://pf.kakao.com/_jPlWG"
+          href="https://pf.kakao.com/_nnCxeX"
           target="_blank"
           rel="noopener noreferrer"
           class="hidden md:flex items-center justify-center bg-[#1DB8CE] hover:bg-cyan-500 text-white text-[13px] font-bold px-4 py-3 rounded transition"
@@ -120,8 +120,9 @@
 
       <a href="support.html" class="py-5 border-b border-white/10">고객센터</a>
 
+      <!-- 모바일 카카오톡 문의 -->
       <a
-        href="https://pf.kakao.com/_jPlWG"
+        href="https://pf.kakao.com/_nnCxeX"
         target="_blank"
         rel="noopener noreferrer"
         class="mt-8 bg-[#1DB8CE] text-center py-4 rounded-[10px] font-bold text-white text-[14px]"
@@ -530,29 +531,37 @@
             </span>
           </div>
 
-          <!-- 온라인 접수 -->
+          <!-- 카카오톡 상담 -->
           <div class="py-5 flex justify-between gap-4">
-            <span class="font-bold">온라인 접수</span>
+            <span class="font-bold">카카오톡 문의</span>
 
             <span class="text-right">
-              홈페이지
-              <a href="support.html" class="text-[#1DB8CE] underline">
-                고객센터
+              <a
+                href="https://pf.kakao.com/_nnCxeX"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[#1DB8CE] underline"
+              >
+                카카오톡 채널
               </a>
               <br>
               <em class="not-italic text-gray-400 text-[12px]">
-                24시간 접수
+                메시지로 상담 문의
               </em>
             </span>
           </div>
 
         </div>
 
+        <!-- 카카오톡 문의 버튼 -->
         <a
-          href="support.html"
+          href="https://pf.kakao.com/_nnCxeX"
+          target="_blank"
+          rel="noopener noreferrer"
           class="mt-6 w-full h-[46px] bg-[#064d70] hover:bg-[#1DB8CE] transition rounded flex items-center justify-center text-[14px] font-bold"
         >
-          온라인 상담접수 →
+          <i class="fa-solid fa-comment mr-2"></i>
+          카카오톡 문의 →
         </a>
 
       </div>
@@ -740,9 +749,7 @@
     document.querySelectorAll('#mobileMenu a').forEach(function(link) {
 
       link.addEventListener('click', function() {
-
         document.getElementById('menuToggle').checked = false;
-
       });
 
     });
